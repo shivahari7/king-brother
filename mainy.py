@@ -32,9 +32,10 @@ import requests
 
 bot = Client(
     "bot",
-    bot_token=os.environ.get("BOT_TOKEN"),
-    api_id=int(os.environ.get("API_ID")),
-    api_hash=os.environ.get("API_HASH")
+   API_HASH = os.environ['API_HASH'] # Api hash
+APP_ID = int(os.environ['APP_ID']) # Api id/App id
+BOT_TOKEN = os.environ['BOT_TOKEN'] # Bot token
+OWNER_ID = os.environ['OWNER_ID'] # Your telegram id
 )
 
 logging.basicConfig(
